@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>D3-Barchart</title>
+        <meta name="description" content="D3-Barchart">
+        <meta name="author" content="Mseong">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="stylesheet/style.css">
+      </head>
+    <body>
+    <div class="container">
+        <h1 id="title">United States GDP</h1>
+        <svg id="svg" width="900" height="450"></svg>
+        <div class="input">
+        
+        <label for="input-date1">From
+            <input type="date" id="input-date1" name="input1" value="1947-01-01">
+        </label>
+        <br>
+        <label for="input-date2">To
+            <input type="date" id="input-date2" name="input2" value="2015-07-01">
+        </label>
+        <button type="submit" id="button-date">Click</button>
+        </div>
+        <footer><small>More information at <a href="https://www.bea.gov/" target="_blank">https://www.bea.gov/</a></small></footer>
+    </div>
+    <div id="tooltip"></div>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="script/script.js"></script>
+    </body>
+</html>
